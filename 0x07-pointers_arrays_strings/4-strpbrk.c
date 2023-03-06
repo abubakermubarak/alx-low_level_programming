@@ -10,12 +10,12 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
+	char *p;
+
 	if (s == NULL || accept == NULL)
 	{
 		return (NULL);
 	}
-	char *p;
-
 	while (*s != '\0')
 	{
 		p = accept;
